@@ -2,7 +2,6 @@ import math
 import numpy as np
 
 class FeatureExtractor:
-    """Extracts dynamic features from signature data"""
     
     def __init__(self):
         """Initialize with default histogram parameters"""
@@ -24,6 +23,7 @@ class FeatureExtractor:
         derivatives = {}
         current = data
         
+        # NOTE: We compute difference array for the derivatives
         for k in range(1, max_order+1):
             # Compute k-th order derivative using forward differences
             deriv = [current[i+1] - current[i] for i in range(len(current)-1)]
