@@ -13,9 +13,9 @@ def main():
     matcher = Matcher()
     
     # Configuration
-    data_dir = "../sample"  # Directory containing signature files
-    user_id = 1        # User to verify (1-5)
-    threshold = 100.0   # Empirical threshold for verification
+    data_dir = "../sample"  
+    user_id = 1        
+    threshold = 100.0   
     
     # Enrollment Phase - Create user template
     print(f"\nEnrolling user {user_id}...")
